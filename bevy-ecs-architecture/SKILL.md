@@ -4,6 +4,10 @@ description: "Design Bevy plugins, ECS data ownership, queries, system ordering,
 ---
 # ECS architecture
 
+## Version gate
+
+Resolve the project's Bevy version/features first. For Bevy 0.20 work or an upgrade to it, read [0.20 task checks](references/bevy-0.20.md) before implementation; retain version-matched APIs for older projects.
+
 ## Procedure
 
 1. **Locate the boundary.** Resolve Bevy and features from the manifest and lockfile. Read the matching official example for the ECS seam being changed. Identify the feature's public configuration, mutable state, and callers before choosing APIs.

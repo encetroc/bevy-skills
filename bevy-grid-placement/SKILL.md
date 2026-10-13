@@ -4,6 +4,10 @@ description: "Implement Bevy grid placement, drag previews, occupancy validation
 ---
 # Transactional placement
 
+## Version gate
+
+Resolve the project's Bevy version/features first. For Bevy 0.20 work or an upgrade to it, read [0.20 task checks](references/bevy-0.20.md) before implementation; retain version-matched APIs for older projects.
+
 ## Procedure
 
 1. **Define the transaction.** Identify the original footprint, candidate footprint, validity rule, and commit/cancel outcomes. Keep the original reservation during preview; exclude only its cells when validating self-overlap.

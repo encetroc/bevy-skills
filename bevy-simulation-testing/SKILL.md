@@ -6,6 +6,10 @@ description: "Test Bevy ECS or Avian physics through deterministic App updates w
 
 Use for state and physical outcomes. Screenshot or visual correctness requires a renderer-backed test instead.
 
+## Version gate
+
+Resolve the project's Bevy version/features first. For Bevy 0.20 work or an upgrade to it, read [0.20 task checks](references/bevy-0.20.md) before implementation; retain version-matched APIs for older projects.
+
 ## Procedure
 
 1. Define the observable behavior and smallest real feature plugin boundary. Build an App with only the required scheduling, time, input, and asset resources; retain the systems under test.

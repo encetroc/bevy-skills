@@ -4,6 +4,10 @@ description: "Diagnose Bevy frame-time regressions, idle change-detection churn,
 ---
 # Frame-cost profiling
 
+## Version gate
+
+Resolve the project's Bevy version/features first. For Bevy 0.20 work or an upgrade to it, read [0.20 task checks](references/bevy-0.20.md) before implementation; retain version-matched APIs for older projects.
+
 ## Procedure
 
 1. **Fix the workload.** Use the application's real startup scene/plugins, camera, resolution, and representative input. Record Bevy/features, adapter/backend, build profile, and scene counts. Serialize runs sharing a GPU.

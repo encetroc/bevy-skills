@@ -4,6 +4,10 @@ description: "Implement Bevy UI controls, keyboard or pointer input, hit routing
 ---
 # UI and input
 
+## Version gate
+
+Resolve the project's Bevy version/features first. For Bevy 0.20 work or an upgrade to it, read [0.20 task checks](references/bevy-0.20.md) before implementation; retain version-matched APIs for older projects.
+
 ## Procedure
 
 1. Resolve the target Bevy version and installed input, picking, UI, and focus plugins. Identify the consumed input seam: raw events, button resources, action abstraction, or picking observers.

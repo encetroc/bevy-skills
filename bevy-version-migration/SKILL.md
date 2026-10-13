@@ -15,7 +15,7 @@ description: "Upgrade Bevy dependencies or resolve release-related Rust API, sha
 
 ## Version-specific notes
 
-For the old collection's 0.19-to-0.20 observations, read [historical checklist](references/0.19-to-0.20.md) only when crossing that boundary. Treat it as leads to confirm, not a substitute for official guidance.
+For Bevy 0.20 work or an upgrade from 0.19, read the [0.19 → 0.20 checklist](references/0.19-to-0.20.md) before editing. It covers shipped features, breaking APIs, changed defaults, and required runtime checks, reviewed against the official release notes and migration guide. Use the project's resolved version; the checklist is documentation-backed, not runtime certification.
 
 ## Build diagnosis
 

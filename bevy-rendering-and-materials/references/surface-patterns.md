@@ -1,6 +1,6 @@
 # Procedural surface patterns
 
-Use when logical tile resolution drives excessive terrain or grid geometry.
+Use when logical tile resolution drives excessive terrain or grid geometry. For Bevy 0.20 implementations, apply the [WESL and material checks](bevy-0.20.md) before porting shader imports, definitions, or embedded paths.
 
 1. Measure vertices, triangles, and construction cost through the real mesh builder at coarse and dense logical resolutions.
 2. Keep tessellation tied to geometric curvature, not logical cell count. Share vertices where the surface permits it; compute pattern detail in a version-matched material extension.

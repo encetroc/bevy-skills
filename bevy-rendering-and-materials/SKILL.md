@@ -4,6 +4,10 @@ description: "Implement Bevy camera composition, render-to-texture, custom mater
 ---
 # Rendering and materials
 
+## Version gate
+
+Resolve the project's Bevy version/features first. For Bevy 0.20 work or an upgrade to it, read [0.20 task checks](references/bevy-0.20.md) before implementation; retain version-matched APIs for older projects.
+
 ## Procedure
 
 1. Resolve the Bevy version, render features, and backend. Start from the matching camera/material example; identify whether the change belongs in the main world or render world.

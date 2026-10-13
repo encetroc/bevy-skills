@@ -4,6 +4,10 @@ description: "Implement Bevy asset readiness, shared asset ownership, custom loa
 ---
 # Assets and scenes
 
+## Version gate
+
+Resolve the project's Bevy version/features first. For Bevy 0.20 work or an upgrade to it, read [0.20 task checks](references/bevy-0.20.md) before implementation; retain version-matched APIs for older projects.
+
 ## Procedure
 
 1. Resolve Bevy and enabled asset/scene features. Read the matching loading, glTF, or animation example for the changed path.

@@ -51,12 +51,14 @@ The previous collection mixed an all-purpose API survey with single-fix skills. 
 | `bevy-procedural-surface-patterns` | Rendering → surface patterns reference |
 | `cube-sphere-projection-consistency` | Coordinate mapping → cube-sphere reference |
 | `headless-avian-physics-tests` | Simulation testing → Avian reference |
-| `migrate-bevy-0-19-to-0-20` | Version migration → historical release checklist |
+| `migrate-bevy-0-19-to-0-20` | Version migration → source-backed 0.19-to-0.20 checklist |
 
 Old names are replaced, not aliases; update explicit invocations and reinstall selected skills under their new names. Remove obsolete installed copies through your skill manager to avoid duplicate discovery.
 
 ## Version and evidence boundaries
 
-Resolve APIs from the target project's manifest/lockfile and matched official source/examples. Version-specific references are starting points to confirm, not universal API promises. The 0.19-to-0.20 checklist is explicitly historical and has not been revalidated in this revision.
+All ten skills now include Bevy 0.20 checks reviewed against the official [release notes](https://bevy.org/news/bevy-0-20/) and [migration guide](https://bevy.org/learn/migration-guides/0-19-to-0-20/). Each task skill links its own local 0.20 reference; the migration skill links the [cross-release checklist](bevy-version-migration/references/0.19-to-0.20.md). Coverage includes WESL, BSN/Ready, UI/widgets/pointer events, weak scheduling and order testing, renderer defaults, texture processing, and profiling candidates.
+
+Resolve APIs from the target project's manifest/lockfile and matched official source/examples. Preserve older-version APIs for projects that have not upgraded. The review is documentation-backed; no Bevy 0.20 build or runtime validation is claimed.
 
 The unchanged headless smoke crate pins Bevy 0.19.1. It verifies infrastructure, not an arbitrary game. Follow its [run recipe](bevy-headless-verification/references/smoke-probe.md) when diagnosing the environment.

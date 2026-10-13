@@ -6,6 +6,10 @@ description: "Verify Bevy gameplay with windowless rendering, scripted actions, 
 
 Use when behavior and rendered evidence are both required. Simulation-only tests and an invisible window establish different coverage.
 
+## Version gate
+
+Resolve the project's Bevy version/features first. For Bevy 0.20 work or an upgrade to it, read [0.20 task checks](references/bevy-0.20.md) before implementation; retain version-matched APIs for older projects.
+
 ## Procedure
 
 1. Resolve Bevy/features and reuse the game's existing app builder, verifier, and artifact conventions. Define named checkpoints with starting state, actions, simulation ticks, state assertions, and visible expectations.

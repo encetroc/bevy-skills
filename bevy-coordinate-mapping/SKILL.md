@@ -4,6 +4,10 @@ description: "Change Bevy surface projections or coordinate transforms while kee
 ---
 # Coordinate contracts
 
+## Version gate
+
+Resolve the project's Bevy version/features first. For Bevy 0.20 work or an upgrade to it, read [0.20 task checks](references/bevy-0.20.md) before implementation; retain version-matched APIs for older projects.
+
 ## Procedure
 
 1. Inventory every producer/consumer of the mapping: mesh generation, shader coordinates, picking, snapping, footprints, and physical units. Write the coordinate domains, bases, orientation, seam ownership, and forward/inverse contract.
